@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauiApp1.FormPage"
+             CanBeDismissedByTappingOutsideOfPopup="True"            
+             Color="Transparent">
+
+    <Grid Margin="0" Padding="10,5" BackgroundColor="White">
+        <VerticalStackLayout 
+            Spacing="10">
+            <CheckBox />
+            <RadioButton Content="Help" ControlTemplate="{x:Static RadioButton.DefaultTemplate}"/>
+            <RadioButton Content="Me" ControlTemplate="{x:Static RadioButton.DefaultTemplate}"/>
+            <Editor Placeholder="Editor" HorizontalOptions="Fill"/>
+            <Entry Placeholder="Entry"/>
+            <Button Text="Fake Button" />
+            <DatePicker/>
+            
+        </VerticalStackLayout>
+    </Grid>
+</toolkit:Popup>
